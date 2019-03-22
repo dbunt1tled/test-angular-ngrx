@@ -1,0 +1,28 @@
+<form novalidate [formGroup]="carForm">
+  <div class="form-group">
+    <label for="carName">Car Name</label>
+    <input type="text" class="form-control"
+           [ngClass]="{'is-invalid': submitted && getField.name.errors}"
+           formControlName = "name"
+           id="carName" aria-describedby="carNameHelp" placeholder="Enter Car Name" required>
+    <small id="carNameHelp" class="form-text text-muted">Not necessary you have been.</small>
+    <div class="d-block invalid-feedback" *ngIf="submitted && getField.name.errors">
+      <div *ngIf="getField.name.errors?.required">Name is Required</div>
+      <div *ngIf="getField.name.errors?.minlength">Name must be at least {{ minSymbols }} characters</div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="carModel">Car Model</label>
+    <input type="text" class="form-control"
+           [ngClass]="{'is-invalid': submitted && getField.model.errors}"
+           formControlName = "model"
+           id="carModel" aria-describedby="carModelHelp" placeholder="Enter Car Model" required >
+    <small id="carModelHelp" class="form-text text-muted">Not necessary you have been.</small>
+    <div class="d-block invalid-feedback" *ngIf="submitted && getField.model.errors">
+      <div *ngIf="getField.model.errors?.required">Model is Required</div>
+      <div *ngIf="getField.model.errors?.minlength">Model must be at least {{ minSymbols }} characters</div>
+    </div>
+  </div>
+  <button type="button" class="btn btn-outline-primary" (click)="onAdd($event)" >Add Car</button>
+  <button type="button" class="btn btn-outline-warning ml-2" (click)="onLoad($event)">Load Cars</button>
+</form>

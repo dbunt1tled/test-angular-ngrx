@@ -1,0 +1,60 @@
+{
+  "cars": [
+    {
+      "name": "Ford",
+      "model": "Focus",
+      "date": "2018-12-18 15:23:59",
+      "isSold": true,
+      "id": 1
+    },
+    {
+      "name": "Kia",
+      "model": "Rio",
+      "date": "2016-03-12 13:00:00",
+      "isSold": true,
+      "id": 2
+    },
+    {
+      "name": "Lada",
+      "model": "Kalina",
+      "date": "2019-10-23 03:33:41",
+      "isSold": false,
+      "id": 3
+    },
+    {
+      "isSold": false,
+      "name": "Jeep",
+      "model": "Cheeroki",
+      "date": "2019-03-22 08:46:42",
+      "id": 4
+    },
+    {
+      "isSold": false,
+      "name": "Chevrolet",
+      "model": "Aveo",
+      "date": "2019-03-22 08:49:41",
+      "id": 5
+    },
+    {
+      "isSold": false,
+      "name": "Subaru",
+      "model": "Forester",
+      "date": "2019-03-22 09:10:11",
+      "id": 6
+    },
+    {
+      "isSold": false,
+      "name": "Ford",
+      "model": "Mondeo",
+      "date": "2019-03-22 09:12:49",
+      "id": 7
+    },
+    {
+      "isSold": false,
+      "name": "Fiat",
+      "model": "Punto",
+      "date": "2019-03-22 09:15:23",
+      "id": 8
+    }
+  ]
+}
